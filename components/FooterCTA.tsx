@@ -11,14 +11,22 @@ export default function FooterCTA() {
         </h2>
         
         <div className="flex flex-wrap gap-4 justify-center">
-          <button className="bg-gold-500 hover:bg-gold-600 text-white px-10 py-3 rounded-md font-bold flex items-center gap-2 transition-all shadow-xl">
+          <a 
+            href="tel:+919867928531"
+            className="bg-gold-500 hover:bg-gold-600 text-white px-10 py-3 rounded-md font-bold flex items-center gap-2 transition-all shadow-xl"
+          >
             <Phone size={18} />
             Call Now
-          </button>
-          <button className="bg-transparent border border-white/30 hover:bg-white/10 text-white px-10 py-3 rounded-md font-bold flex items-center gap-2 transition-all">
+          </a>
+          <a 
+            href="https://wa.me/message/GAP72DHIZYHXA1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-transparent border border-white/30 hover:bg-white/10 text-white px-10 py-3 rounded-md font-bold flex items-center gap-2 transition-all"
+          >
             <MessageCircle size={18} />
             WhatsApp Us
-          </button>
+          </a>
         </div>
       </div>
     </section>

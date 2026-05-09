@@ -38,9 +38,14 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <button className="bg-gold-500 hover:bg-gold-600 text-white px-6 py-2.5 rounded-md text-sm font-semibold transition-all">
+          <a 
+            href="https://wa.me/message/GAP72DHIZYHXA1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gold-500 hover:bg-gold-600 text-white px-6 py-2.5 rounded-md text-sm font-semibold transition-all"
+          >
             Book Now
-          </button>
+          </a>
         </div>
 
         <button className="lg:hidden text-navy-900" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
@@ -60,9 +65,14 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <button className="bg-gold-500 text-white py-3 rounded-md font-bold mt-2">
+          <a 
+            href="https://wa.me/message/GAP72DHIZYHXA1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gold-500 text-white py-3 rounded-md font-bold mt-2 text-center"
+          >
             Book Now
-          </button>
+          </a>
         </div>
       )}
     </nav>

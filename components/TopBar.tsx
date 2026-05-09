@@ -10,7 +10,7 @@ export default function TopBar() {
           <span>Indirapuram, Ghaziabad, Uttar Pradesh</span>
         </div>
       </div>
-      
+
       <div className="flex items-center gap-6">
         <div className="flex items-center gap-3">
           <span>FOLLOW US:</span>
@@ -22,7 +22,7 @@ export default function TopBar() {
           <span>Have any questions?</span>
           <div className="flex items-center gap-1 font-semibold text-white">
             <Phone size={14} className="text-gold-500" />
-            <span>+91 98765 43210</span>
+            <span>+91 98679 28531</span>
           </div>
         </div>
       </div>

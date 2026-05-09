@@ -14,6 +14,16 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-[90vh] flex items-stretch overflow-hidden bg-[#020c1b]">
+      {/* Background Building Image for Mobile */}
+      <div className="absolute inset-0 lg:hidden overflow-hidden">
+        <img 
+          src="/building.png" 
+          alt="The Stay Adda Building"
+          className="w-full h-full object-cover opacity-30 grayscale-[50%]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#020c1b] via-[#020c1b]/80 to-[#020c1b]" />
+      </div>
+
       {/* Background Glows */}
       <div className="absolute top-0 left-0 w-1/3 h-full bg-gold-500/5 blur-[120px] pointer-events-none" />
       
@@ -32,7 +42,7 @@ export default function Hero() {
               </div>
               
               <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] mb-6">
-                Premium Boys PG <br />
+                Premium PG <br />
                 in <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-500 to-gold-300 italic drop-shadow-sm">Indirapuram</span>
               </h1>
               
@@ -53,16 +63,24 @@ export default function Hero() {
               </div>
 
               <div className="flex flex-wrap gap-5">
-                <button className="relative group overflow-hidden bg-gold-500 px-10 py-4 rounded-full font-bold text-navy-900 transition-all hover:shadow-[0_0_30px_rgba(212,160,23,0.4)]">
+                <a 
+                  href="tel:+919867928531"
+                  className="relative group overflow-hidden bg-gold-500 px-10 py-4 rounded-full font-bold text-navy-900 transition-all hover:shadow-[0_0_30px_rgba(212,160,23,0.4)]"
+                >
                   <span className="relative z-10 flex items-center gap-2">
                     Call Now <span className="text-lg">→</span>
                   </span>
                   <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                </button>
+                </a>
                 
-                <button className="px-10 py-4 rounded-full border border-white/20 font-bold hover:bg-white/5 transition-all backdrop-blur-sm">
+                <a 
+                  href="https://wa.me/message/GAP72DHIZYHXA1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-10 py-4 rounded-full border border-white/20 font-bold hover:bg-white/5 transition-all backdrop-blur-sm flex items-center justify-center"
+                >
                   WhatsApp Us
-                </button>
+                </a>
               </div>
             </motion.div>
           </div>
